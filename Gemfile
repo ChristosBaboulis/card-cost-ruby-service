@@ -47,4 +47,8 @@ group :development do
   # gem "spring"
 end
 
+group :development, :test do
+  gem 'rspec-rails', '~> 5.0'
+end
+
 gem "mongoid", "~> 8.0.9"
