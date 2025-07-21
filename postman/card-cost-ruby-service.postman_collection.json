@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "83414921-e4e8-4d6a-a4a5-3cae6ed315d0",
+		"name": "card-cost-ruby-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43203133"
+	},
+	"item": [
+		{
+			"name": "POST /api/given_card_related_cost → Get Card Related Cost",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"card_number\": \"45717360\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/card_costs/binlist_cost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"card_costs",
+						"binlist_cost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/clearing_costs → Get All Clearing Costs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/card_costs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"card_costs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

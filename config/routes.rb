@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'hello/index'
-  
-  root "hello#index"
+  resources :card_costs, only: [:index, :create] do
+    collection do
+      post :binlist_cost
+    end
+  end
 
-  resources :card_costs, only: [:index, :create]
+  root "hello#index"
 end
